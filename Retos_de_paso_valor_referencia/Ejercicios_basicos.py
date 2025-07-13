@@ -263,3 +263,39 @@ print('Se llama a la función borra_dict ')
 borra_dict(my_dict)
 
 print(f'my_dict en el programa principal es {my_dict}')
+
+# un ejemplo extra
+
+list_a = [10,20,54]
+list_b = [43,90]
+
+print(f'list_a es {list_a}')
+print(f'list_b es {list_b}')
+print('Ahora no')
+
+list_b = list_a
+
+print(f'list_a es {list_a}')
+print(f'list_b es {list_b}')
+
+print('Ahora menos')
+list_b[1] = 90
+
+print(f'list_a es {list_a}')
+print(f'list_b es {list_b}')
+
+# Conclusiones
+
+'''
+Las variables que corresponden a tipos de datos como los son los int, float, complex, char y string,
+por defectos se pasa por valor. Esto es, entregarle una copia del valor de la variable a la función.
+
+Una variable dentro del programa principal se considera global para unicamente efectos de letura por defecto,
+no obstante, es posible habilitar la posibilidad de escitura de la variable por medio de la palabra clave
+global dentro de la función que la quiere usar como tal, claro está, esta palabra clave debe ir acompañada a
+su derecha del nombre que tiene la variable en el programa principal. Con esta keyword un variable de tipo de
+datos básico podría pasarse por referencia a efectos prácticos.
+
+El uso de palabra clve return al final de la función no obliga a un paso por referencia.
+
+'''
