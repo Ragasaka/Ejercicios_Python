@@ -6,8 +6,8 @@ def  trunca_programa_referencia (h, i) :
     return h, i
 
 def main_referencia ():
-    c = [33]
-    d = [1 + 2j]
+    c = [33, 11]
+    d = [1 + 2j, 98]
 
     import programa_valor
 
