@@ -44,17 +44,3 @@ palidrom(word1)
 palidrom(word2)
 
 anagram(word1, word2)
-
-
-'''if (len(word1) == len(word2)) :
-    for i in range(0, len(word2), 1):
-        if (word1.count(word1[i]) == word2.count(word1[i])):
-            if(i == (len(word1) - 1)) :
-                print(f'Ambas palabras son anagramas')
-        else :
-            print('Ambas palabras no son anagramas')
-            break;
-else :
-    print('Ambas palabras no son anagramas')
-print('Fin de programa')
-'''

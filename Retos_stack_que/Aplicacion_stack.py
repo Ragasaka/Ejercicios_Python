@@ -1,7 +1,7 @@
-import Stacks
+import Retos_stack_que.Stacks_by_Kevin as Stacks_by_Kevin
 
 n = 5
-my_stack = Stacks.Stacks()
+my_stack = Stacks_by_Kevin.Stacks()
 
 for i in range(0, n) :
     my_stack.push_stack(input())
