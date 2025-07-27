@@ -95,3 +95,9 @@ print(f'Don {nabor.name} tiene los siguientes project managers a su mando: \n {n
 
 nabor.clientes()
 nabor.proveedores()
+
+print(f'{blanca.name} tiene los siguientes programadores a su mando {blanca.colaborators}')
+print(f'{mauricio.name} tiene los siguientes programadores a su mando {mauricio.colaborators}')
+
+mauricio.gestiona_proyecto()
+blanca.gestiona_proyecto()
