@@ -5,8 +5,9 @@ with open('Primer_archivo.txt', 'w') as f :
 
 print(f'Se escribieron {c} caracteres')
 '''
-new_path = 'Users\\User\\Desktop\\Carpeta_creada_con_python'
-os.chdir('C:\\')
+
+new_path = 'C:\\Users\\karroyave\\OneDrive - ENDAVA\\Desktop\\Carpeta_creada_con_python'
+
 
 try :
 
@@ -20,7 +21,7 @@ except FileExistsError as e:
 except PermissionError as e :
 
     print(f'''{type(e).__name__}: No cuentas los permisos necesarios para crear el 
-          directorio {new_path} ''')
+          directorio {new_path}''' )
     
 except Exception as e :
 
@@ -28,13 +29,9 @@ except Exception as e :
 
 finally:
 
-    os.chdir('c:\\' + new_path)
+    os.chdir(new_path)
 
     with open('El hechicero.txt','w') as f :
-        c = f.write('''Y sus grandes poderes... Jajaja\nEste es el segundo archivo que he creado\nEn esta ocación elegí la direección en donde quise guardarlo''')
+        c = f.write('Y sus grandes poderes... Jajaja\nEste es el segundo archivo que he creado\nEn esta ocación elegí la direección en donde quise guardarlo')
 
     print(f'Después se escribieron {c} caracteres')
-
-
-
-
