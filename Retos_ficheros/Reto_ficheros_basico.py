@@ -19,18 +19,9 @@ else:
         f.write('Lenguaje favorito: Python\n')
     print('Ya se creó el archivo')
 finally :
-    '''with open('Ragasaka.txt', 'r') as f:
-        content = f.readline()
-    print(f'El contenido de archivo era:\n{content}')'''
-    '''print(f'El contenido de archivo era:\n')
     with open('Ragasaka.txt', 'r') as f:
-        for content in f:
-            print(content)'''
-    with open('Ragasaka.txt', 'r') as f:
-        content = f.readlines()
-    print(f'El contenido era:\n{content}')
-    for i in content:
-        print(i)
+        content = f.read()
+    print(f'El contenido de archivo era:\n{content}')
     
 b = True
 
