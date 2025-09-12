@@ -106,7 +106,7 @@ second_tree.write('output3.xml')
 
 
 second_root = second_tree.getroot()
-second_root[0].text = 8
+second_root[0].text = "Good morning"
 second_root[1][0].text = "Good night"
 second_root[1].text = "Good afternoon"
 
